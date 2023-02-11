@@ -6,6 +6,7 @@ import logging
 import os
 from enum import Enum
 from typing import List, Optional, Union
+from sklearn import metrics
 
 import tqdm
 import numpy as np
@@ -30,7 +31,10 @@ def evaluate_standard(preds, labels, scoring_method):
     # and F1 score for the predictions and gold labels.
     # Please also make your sci-kit learn scores are computed
     # using `scoring_method` for the `average` argument.
-    raise NotImplementedError("Please finish the TODO!")
+    acc = metrics.accuracy_score(labels, preds)
+    prec = metrics.precision_score(labels, preds, average=scoring_method)
+    recall = metrics.recall_score(labels, preds, average=scoring_method)
+    f1 = metrics.f1_score(labels, preds, average=scoring_method)
     # End of TODO
     ########################################################
 
@@ -46,14 +50,22 @@ def pairwise_accuracy(guids, preds, labels):
     # statement coming from the same complementary
     # pair is identical. You can simply pair the these
     # predictions and labels w.r.t the `guid`. 
-    raise NotImplementedError("Please finish the TODO!")
+    pairs = {} # In case pairs aren't always listed in order
+    for ind, pred in enumerate(preds):
+        guid = guids[ind]
+        label = labels[ind]
+        if guid in pairs:
+            if pairs[guid]:
+                pairs[guid] = pred == label
+        else:
+            pairs[guid] = pred == label
+    acc = sum(pairs.values()) / len(pairs.values())
     # End of TODO
     ########################################################
      
     return acc
 
 if __name__ == "__main__":
-
     # Unit-testing the pairwise accuracy function.
     guids = [0, 0, 1, 1, 2, 2, 3, 3]
     preds = np.asarray([0, 0, 1, 0, 0, 1, 1, 1])
