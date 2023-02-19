@@ -61,9 +61,61 @@ class Com2SenseDataProcessor(DataProcessor):
         # Use the same guid for statements from the same complementary pair.
         # 6. Make sure to handle if data do not have labels field.
         # This is useful for loading test data
-        raise NotImplementedError("Please finish the TODO!")
+        # raise NotImplementedError("Please finish the TODO!")
         # End of TODO.
         ##################################################
+
+        json_path = os.path.join(data_dir, split+".json")
+        data = json.load(open(json_path, "r"))
+
+        for i in range(len(data)):
+            datum = data[i]
+            guid = str(i)
+            sentence_1 = datum["sent_1"]
+            sentence_2 = datum["sent_2"]
+            label_1 = datum.get("label_1")
+            label_2 = datum.get("label_2")
+
+            if label_1 is not None:
+                if label_1 == "True":
+                    label_1 = 1
+                else:
+                    label_1 = 0
+
+            if label_2 is not None:
+                if label_2 == "True":
+                    label_2 = 1
+                else:
+                    label_2 = 0
+
+            domain = datum.get("domain")
+            scenario = datum.get("scenario")
+            numeracy = datum.get("numeracy")
+            if numeracy is not None:
+                if numeracy == "True":
+                    numeracy = True
+                else:
+                    numeracy = False
+
+            example_1 = Coms2SenseSingleSentenceExample(
+                guid=guid,
+                text=sentence_1,
+                label=label_1,
+                domain=domain,
+                scenario=scenario,
+                numeracy=numeracy
+            )
+
+            example_2 = Coms2SenseSingleSentenceExample(
+                guid=guid,
+                text=sentence_2,
+                label=label_2,
+                domain=domain,
+                scenario=scenario,
+                numeracy=numeracy
+            )
+            examples.append(example_1)
+            examples.append(example_2)
 
         return examples
 
