@@ -202,7 +202,7 @@ class Com2SenseDataset(Dataset):
 
         example = self.examples[idx]
         # not sure if this is correct but it's the only way it didn't become a tuple when loading
-        guid = torch.Tensor(int(example.guid))
+        guid = int(example.guid)
         text = example.text
         label = example.label
         #domain = example.domain

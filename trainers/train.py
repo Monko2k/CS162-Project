@@ -623,10 +623,10 @@ def main():
     if args.training_phase == "pretrain":
         # (3) Load MLM model if pretraining (Optional)
         # Complete only if doing MLM pretraining for improving performance
-        model = AutoModelForMaskedLM.from_config(config)
+        model = AutoModelForMaskedLM.from_pretrained(args.model_name_or_path, config=config)
     else:
         # (4) Load sequence classification model otherwise
-        model = AutoModelForSequenceClassification.from_config(config)
+        model = AutoModelForSequenceClassification.from_pretrained(args.model_name_or_path, config=config)
 
     # End of TODO.
     ##################################################
