@@ -1,0 +1,121 @@
+Evaluate the following checkpoints: ['./outputs/com2sense/ckpts_deberta_v3/checkpoint-1000', './outputs/com2sense/ckpts_deberta_v3/checkpoint-1250', './outputs/com2sense/ckpts_deberta_v3/checkpoint-1500', './outputs/com2sense/ckpts_deberta_v3/checkpoint-1750', './outputs/com2sense/ckpts_deberta_v3/checkpoint-2000', './outputs/com2sense/ckpts_deberta_v3/checkpoint-250', './outputs/com2sense/ckpts_deberta_v3/checkpoint-500', './outputs/com2sense/ckpts_deberta_v3/checkpoint-750']
+03/13/2023 19:04:39 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-1000
+03/13/2023 19:04:41 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:04:41 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-1000 *****
+03/13/2023 19:04:41 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:04:41 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|█████████████████████████████████████████████████████████████████████| 796/796 [00:24<00:00, 31.97it/s]
+03/13/2023 19:05:06 - INFO - __main__ -   ***** Eval results checkpoint-1000 on split: dev *****
+03/13/2023 19:05:06 - INFO - __main__ -     com2sense_F1_score = 0.7902010050251256
+03/13/2023 19:05:06 - INFO - __main__ -     com2sense_accuracy = 0.7902010050251256
+03/13/2023 19:05:06 - INFO - __main__ -     com2sense_loss = tensor(1.5578, device='cuda:0')
+03/13/2023 19:05:06 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6532663316582915
+03/13/2023 19:05:06 - INFO - __main__ -     com2sense_precision = 0.7902010050251256
+03/13/2023 19:05:06 - INFO - __main__ -     com2sense_recall = 0.7902010050251256
+03/13/2023 19:05:06 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-1250
+03/13/2023 19:05:07 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:05:07 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-1250 *****
+03/13/2023 19:05:07 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:05:07 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|█████████████████████████████████████████████████████████████████████| 796/796 [00:23<00:00, 33.22it/s]
+03/13/2023 19:05:31 - INFO - __main__ -   ***** Eval results checkpoint-1250 on split: dev *****
+03/13/2023 19:05:31 - INFO - __main__ -     com2sense_F1_score = 0.785175879396985
+03/13/2023 19:05:31 - INFO - __main__ -     com2sense_accuracy = 0.785175879396985
+03/13/2023 19:05:31 - INFO - __main__ -     com2sense_loss = tensor(1.7084, device='cuda:0')
+03/13/2023 19:05:31 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6432160804020101
+03/13/2023 19:05:31 - INFO - __main__ -     com2sense_precision = 0.785175879396985
+03/13/2023 19:05:31 - INFO - __main__ -     com2sense_recall = 0.785175879396985
+03/13/2023 19:05:31 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-1500
+03/13/2023 19:05:32 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:05:32 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-1500 *****
+03/13/2023 19:05:32 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:05:32 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████| 796/796 [00:24<00:00, 33.08it/s]
+03/13/2023 19:05:56 - INFO - __main__ -   ***** Eval results checkpoint-1500 on split: dev *****
+03/13/2023 19:05:56 - INFO - __main__ -     com2sense_F1_score = 0.792713567839196
+03/13/2023 19:05:56 - INFO - __main__ -     com2sense_accuracy = 0.792713567839196
+03/13/2023 19:05:56 - INFO - __main__ -     com2sense_loss = tensor(1.7143, device='cuda:0')
+03/13/2023 19:05:56 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6557788944723618
+03/13/2023 19:05:56 - INFO - __main__ -     com2sense_precision = 0.792713567839196
+03/13/2023 19:05:56 - INFO - __main__ -     com2sense_recall = 0.792713567839196
+03/13/2023 19:05:56 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-1750
+03/13/2023 19:05:58 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:05:58 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-1750 *****
+03/13/2023 19:05:58 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:05:58 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|███████████████████████████████████████████████████████████████████████████| 796/796 [00:23<00:00, 33.24it/s]
+03/13/2023 19:06:22 - INFO - __main__ -   ***** Eval results checkpoint-1750 on split: dev *****
+03/13/2023 19:06:22 - INFO - __main__ -     com2sense_F1_score = 0.7939698492462312
+03/13/2023 19:06:22 - INFO - __main__ -     com2sense_accuracy = 0.7939698492462312
+03/13/2023 19:06:22 - INFO - __main__ -     com2sense_loss = tensor(1.7572, device='cuda:0')
+03/13/2023 19:06:22 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6532663316582915
+03/13/2023 19:06:22 - INFO - __main__ -     com2sense_precision = 0.7939698492462312
+03/13/2023 19:06:22 - INFO - __main__ -     com2sense_recall = 0.7939698492462312
+03/13/2023 19:06:22 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-2000
+03/13/2023 19:06:23 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:06:23 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-2000 *****
+03/13/2023 19:06:23 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:06:23 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|████████████████████████████████████████████████████████████████████████████████████| 796/796 [00:23<00:00, 33.53it/s]
+03/13/2023 19:06:47 - INFO - __main__ -   ***** Eval results checkpoint-2000 on split: dev *****
+03/13/2023 19:06:47 - INFO - __main__ -     com2sense_F1_score = 0.7977386934673367
+03/13/2023 19:06:47 - INFO - __main__ -     com2sense_accuracy = 0.7977386934673367
+03/13/2023 19:06:47 - INFO - __main__ -     com2sense_loss = tensor(1.7599, device='cuda:0')
+03/13/2023 19:06:47 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6557788944723618
+03/13/2023 19:06:47 - INFO - __main__ -     com2sense_precision = 0.7977386934673367
+03/13/2023 19:06:47 - INFO - __main__ -     com2sense_recall = 0.7977386934673367
+03/13/2023 19:06:47 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-250
+03/13/2023 19:06:48 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:06:48 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-250 *****
+03/13/2023 19:06:48 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:06:48 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|████████████████████████████████████████████████████████████████████████████████████| 796/796 [00:23<00:00, 33.69it/s]
+03/13/2023 19:07:12 - INFO - __main__ -   ***** Eval results checkpoint-250 on split: dev *****
+03/13/2023 19:07:12 - INFO - __main__ -     com2sense_F1_score = 0.7876884422110553
+03/13/2023 19:07:12 - INFO - __main__ -     com2sense_accuracy = 0.7876884422110553
+03/13/2023 19:07:12 - INFO - __main__ -     com2sense_loss = tensor(0.8712, device='cuda:0')
+03/13/2023 19:07:12 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6457286432160804
+03/13/2023 19:07:12 - INFO - __main__ -     com2sense_precision = 0.7876884422110553
+03/13/2023 19:07:12 - INFO - __main__ -     com2sense_recall = 0.7876884422110553
+03/13/2023 19:07:12 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-500
+03/13/2023 19:07:13 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:07:13 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-500 *****
+03/13/2023 19:07:13 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:07:13 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|████████████████████████████████████████████████████████████████████████████████████| 796/796 [00:24<00:00, 32.98it/s]
+03/13/2023 19:07:37 - INFO - __main__ -   ***** Eval results checkpoint-500 on split: dev *****
+03/13/2023 19:07:37 - INFO - __main__ -     com2sense_F1_score = 0.7902010050251256
+03/13/2023 19:07:37 - INFO - __main__ -     com2sense_accuracy = 0.7902010050251256
+03/13/2023 19:07:37 - INFO - __main__ -     com2sense_loss = tensor(1.1626, device='cuda:0')
+03/13/2023 19:07:37 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6557788944723618
+03/13/2023 19:07:37 - INFO - __main__ -     com2sense_precision = 0.7902010050251256
+03/13/2023 19:07:37 - INFO - __main__ -     com2sense_recall = 0.7902010050251256
+03/13/2023 19:07:37 - INFO - __main__ -
+
+Evaluate checkpoint: ./outputs/com2sense/ckpts_deberta_v3/checkpoint-750
+03/13/2023 19:07:38 - INFO - root -   Number of dev examples in task com2sense: 796
+03/13/2023 19:07:38 - INFO - __main__ -   ***** Running evaluation on split: dev checkpoint-750 *****
+03/13/2023 19:07:38 - INFO - __main__ -     Num examples = 796
+03/13/2023 19:07:38 - INFO - __main__ -     Batch size = 1
+Evaluating: 100%|████████████████████████████████████████████████████████████████████████████████████| 796/796 [00:24<00:00, 33.00it/s]
+03/13/2023 19:08:02 - INFO - __main__ -   ***** Eval results checkpoint-750 on split: dev *****
+03/13/2023 19:08:02 - INFO - __main__ -     com2sense_F1_score = 0.7952261306532663
+03/13/2023 19:08:02 - INFO - __main__ -     com2sense_accuracy = 0.7952261306532663
+03/13/2023 19:08:02 - INFO - __main__ -     com2sense_loss = tensor(1.4593, device='cuda:0')
+03/13/2023 19:08:02 - INFO - __main__ -     com2sense_pairwise_accuracy = 0.6633165829145728
+03/13/2023 19:08:02 - INFO - __main__ -     com2sense_precision = 0.7952261306532663
+03/13/2023 19:08:02 - INFO - __main__ -     com2sense_recall = 0.7952261306532663
